@@ -28,7 +28,20 @@ string print (int [] arr)
     return res;
 }
 
+int [] chetnoe (int [] arr)
+{
+   for (int i = 0; i < arr.Length; i++)
+   {
+       if (arr[i] % 2  == 0)
+       {
+           Console.Write (arr[i] + " ");
+       }
+   } 
+   return arr;
+}
 
-int [] A = element(8);    
+int [] A = element(15);    
 sozdanie(A, -10, 10);
 print (A);
+Console.WriteLine(" ");
+chetnoe (A);
